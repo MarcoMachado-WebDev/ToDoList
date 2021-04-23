@@ -1,0 +1,91 @@
+.addTaks{
+    text-align: center;
+    margin: 50px 0px;
+    font-size: 1.2rem;
+}
+
+.addTaks input{
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+li{
+    background-color: #90afc5;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+li h1{
+    margin-left: 10px;
+}
+
+li h2{
+    margin-left: auto;
+}
+
+li button {
+    margin-left:auto ;
+    padding: 5px 20px;
+    background-color: rgba(255, 0, 0, 0.658);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dateButon {
+    display: flex; 
+    margin-left: auto;
+    align-items: center;
+    color: black;
+}
+
+li button:hover{
+    background-color: red;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.clearButton {
+    padding: 10px 20px;
+    background-color: rgba(245, 43, 43, 0.658);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.saveButton{
+    padding: 10px 20px;
+    background-color: rgba(86, 255, 35, 0.596);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.saveButton:hover{
+    background-color: rgba(86, 255, 35, 0.835);
+
+}
+.clearButton:hover{
+    background-color: rgba(255, 30, 30, 0.87);
+
+}
+
+
+@media (max-width: 768px) {
+    .addTaks{
+        text-align: left;
+    }
+
+    li p{
+        word-break: break-all;
+
+    }
+}

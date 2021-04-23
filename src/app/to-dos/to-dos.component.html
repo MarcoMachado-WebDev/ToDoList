@@ -1,0 +1,24 @@
+<div class="divForm" >
+    <div class="addTaks" (click)="addToDo()">
+        <label for="teste">{{ message }}</label>
+        <input  *ngIf="toDo" id="teste" type="text" autofocus #Task (keyup.enter)="onAddTask(Task.value)" placeholder="Press Enter to confirm!" maxlength="80">    
+    </div>
+    <div>
+        <form>
+            <ul class="lista">
+                <li *ngFor="let task of tasks, let i = index" (click)="onAnimate(i)">
+                    <p [@doneTask]="task.done">{{task.content}}</p>
+                    <div class="dateButon">
+                        <h2>{{task.date}}</h2>
+                        <button type="button" (click)="onDelete(i)">DEL</button>
+                    </div>
+                    
+                </li>
+            </ul>
+            <br>
+            <button class="saveButton" (click)="onSave()" type="submit">SAVE</button>
+            <button class="clearButton" *ngIf="tasks.length > 0" (click)="onClear()">CLEAR</button>
+        </form>
+    </div>   
+</div>
+

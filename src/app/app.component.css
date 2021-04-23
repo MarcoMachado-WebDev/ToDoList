@@ -1,0 +1,19 @@
+main {
+    margin: 0px auto;
+    width: 1024px;
+    min-height: 500px;  
+}
+
+header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #2A3132;
+}
+
+@media (max-width: 768px) {
+    
+    main{
+        min-height: 300px;
+        width: 100%;
+    }
+}

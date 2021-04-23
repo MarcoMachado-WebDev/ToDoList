@@ -1,0 +1,40 @@
+nav{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .title {
+    color: #ffffffd3;
+    font-size: 3rem;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: none;
+}
+
+.navigation{
+    text-decoration: none;
+    font-size: 1rem;
+    border: 1px #ffffffd3 solid;
+    color: #ffffffd3;
+    padding: 15px;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.navigation:hover{
+    background-color: black;
+
+}
+
+.active{
+    background-color: rgb(70, 69, 69);
+}
+
+@media (max-width: 768px) {
+    nav .title{
+        margin-left: 10px;
+    }
+}
